@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" poster="./images/poster.jpg" src="./videos/lofi.mp4" width="400px"></video>
+            <div class="player-overlay">
+                <h2 class="player-title">lofi insano</h2>
+                <div class="player-action">
+                    <button class="btn" id="backward" aria-label="retroceder 10 seg"
+                        title="Retroceder 10 segundos"></button>
+                    <button class="btn" id="play" aria-label="reproducir video" title="Reproducir"></button>
+                    <button class="btn" hidden id="pause" aria-label="pausar video" title="Pausar"></button>
+                    <button class="btn" id="forward" aria-label="adelantar 10 seg"
+                        title="Adelantar 10 segundos"></button>
+                </div>
+                <div class="player-progress">
+                    <input id="progress" type="range" min="0" value="0" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
